@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Форма подборки квартиры</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <form action="#" method="post" name="location">
+                <label for="district">Выбор района города</label>
+                    <select id="district" name="district" multiple size="1">
+                    <optgroup label="Санкт-Петербург">
+                        <option value="1">Адмиралтейский</option>
+                        <option value="2">Выборгский</option>
+                        <option value="3">Калининский</option>
+                        <option value="4">Красногвардейский</option>
+                        <option value="5">Красносельский</option>
+                        <option value="6">Курортный</option>
+                        <option value="7">Московский</option>
+                        <option value="8">Петроградский</option>
+                        <option value="9">Петродворцовый</option>
+                        <option value="10">Приморский</option>
+                    </optgroup>
+                    <optgroup label="Ленинградская область">
+                        <option value="1">Всеволожский</option>
+                        <option value="2">Гатчинский</option>
+                        <option value="3">Приозерский</option>
+                        <option value="4">Тихвинский</option>
+                    </optgroup>
+                    </select>
+                <label for="londontube">Выбор станции метро</label>
+                    <select id="londontube" name="londontube" multiple size="1">
+                        <option value="1">Адмиралтейская</option>
+                        <option value="2">Выборгская</option>
+                        <option value="3">Гостиный двор</option>
+                        <option value="4">Площадь Востания</option>
+                        <option value="5">Петроградская</option>
+                        <option value="6">Пионерская</option>
+                        <option value="7">Приморская</option>
+                        <option value="8">Площадь Востания</option>
+                        <option value="9">Площадь Ленина</option>
+                        <option value="10">Электросила</option>
+                    </select>
+                <label>Введите название улицы<input type="text" name="street"></label>                 
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Выбор количества комнат</legend>
+                    <label>Студия: <input type="checkbox" name="flatsize[]" value="0"></label>
+                    <label>Однокомнатная: <input type="checkbox" name="flatsize[]" value="1"></label>
+                    <label>Двухкомнатная: <input type="checkbox" name="flatsize[]" value="2"></label>
+                    <label>Трехкомнатная: <input type="checkbox" name="flatsize[]" value="3"></label>
+                    <label>Четырехкомнатная: <input type="checkbox" name="flatsize[]" value="4"></label>
+                </fieldset> 
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Год постройки</legend>
+                    <label>От: <input type="number" step="1" min="1703" max="2022"></label>
+                    <label>До: <input type="number" step="1" min="1703" max="2022"></label>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Выбор стоимости</legend>
+                    <label>От: <input type="number" step="1" min="0" max="50000000"> руб</label>
+                    <label>До: <input type="number" step="1" min="0" max="50000000"> руб</label>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Размеры квартиры</legend>
+                    <label>Макс. до: <input type="number" step="0.1" min="0" max="300" > м2 </label>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Выбор отделки</legend>
+                    <label>С отделкой:<input type="radio" name="remont"></label>
+                    <label>Без отделки:<input type="radio" name="remont"></label>
+                </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Квартиры с терассой</legend>
+                    <label>С терассой: <input type="radio" name="balkon"></label>
+                    <label>Без терассы: <input type="radio" name="balkon"></label>
+                </fieldset> 
+            </form>
+            <form>
+                <fieldset>
+                    <legend>Класс дома</legend>
+                    <label>Бизнес-класс:<input type="checkbox" name="type" value="1"></label>
+                    <label>Премиум:<input type="checkbox" name="type" value="2"></label>
+                    <label>Deluxe:<input type="checkbox" name="type" value="3"></label>
+                </fieldset>
+            </form>
+            <form>
+                <label>Этажность:<input type="number" step="1" min="1" max="27"></label>
+            </form>
+            <input type="submit" value="Отправить запрос на поиск"
+        </main>
+        <footer></footer>
+    </body>
+</html>

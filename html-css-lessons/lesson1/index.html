@@ -1,0 +1,60 @@
+<!-- текст комментария -->
+<!-- ctrl + / -->
+<!doctype html> <!-- текст комментария -->
+<html> <!-- границы html документа. Содержит только head & body -->
+<head> 
+    <meta charset="utf-8"> <!-- кодировка документа -->
+    <meta name="author" content="web-developer">
+    <meta name="description" content="описание странцицы"> <!-- какая-то важная информация по документам. 
+                                                                По идее используется для тегов в сети, желательно уместить
+                                                                ее в 100 символов -->
+    <title>Приют для животных</title> <!-- заголовок вкладки -->
+    <!-- иконка вкладки или фив-иконка -->
+
+</head> <!-- отражается служебная информация о документе -->
+<body> <!-- здесь все, что видит пользователь -->
+ <!-- ************* все нижеидущие теги-контейнера можно заменить тегом ************* <>div</> -->
+            <header> <!-- шапка сайта -->
+                <nav> <!-- навигация по сайту -->
+                    <!-- <a href="https://google.com"></a>          ищет в сетти -->
+                    <!-- <a href="index.html"></a>                  ищет на том же уровне проекта -->
+                    <!-- <a href="/index.html"></a>                 ищет в корне проекта -->
+                    <!-- <a download href="price.pdf"></a>  -       это пример для скачивания файла --> 
+                    <!-- <a href="#target">                         это чтобы по клику перемещаться по странице --> 
+                    <!-- <div id="target"></div>                    это чтобы по клику перемещаться по странице -->
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">О приюте</a>
+                    <a href="hotel.html">Гостиница для животных</a> <!-- если не знаешь, куда должна вести ссылка, можно поставить # -->
+                </nav>
+            </header>
+            <aside>
+                <figure>
+                    <figcaption>Текст к картинке</figcaption>
+                    <img alt="изображение 1"src="images/1.jpg">    <!-- крутой кодер всегда указывает два этих атрибута -->
+                </figure>
+                <figure>
+                    <figcaption>Текст к картинке c другим котиком</figcaption>
+                    <img alt="изображение 2"src="images/2.jpg">    <!-- еще есть height и width, их пока указываем, потом перестанем
+                                                                        еще есть srcset где можно настраивать какую картинку браузер
+                                                                        выбирает в зависимости от размера экрана -->
+                </figure>
+            </aside> <!-- просто какая-либо информация между шапкой и телом сайта: новости, акции и т.д. -->
+            <main>
+                <section>
+                <h3>Собаки</h3>
+                <div> emmet
+                    <h2>Граф Лабрадор</h2>
+                    <img alt="Граф" src="https://picsum.photos/id/237/640/480">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi numquam iusto in voluptatem perferendis mollitia explicabo. Ab, dolor ex veniam accusamus repellendus et, eveniet vero id quis est temporibus!</p>
+                    <a href="#">Подробнее о зверёныше</a>
+                </div>
+                </section>
+                <h3>Кошки</h3>
+                <section>
+
+                </section>
+            </main>
+            <footer></footer>
+
+</body>
+</html>

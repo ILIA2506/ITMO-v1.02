@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!--HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">--> <!-- ok -->
+<html lang="en">                                                                                        <!-- ok -->
+<head>                                                                                                  <!-- ok -->
+    <title>Найти ошибки в разметке</title>                             <!-- по идее надо <meta charset="utf-8"> -->
+</head>                                                                                                 <!-- ok -->
+<body>
+
+<main>                                             <!-- header не может быть в main. СНачала header, потом main -->
+    <header>
+        <img scr="" alt="найди себе друга">                    <!-- не указано значение src, не прогрузится файл-->
+        <article>                                                                                       <!-- ok -->
+            <a href="#">Главная</a>                                                                     <!-- ok -->
+            <a href="#">Кошки                                                            <!-- не закрыта строка -->
+            <a href="#">Собаки</a>                                                                      <!-- ok -->
+            <a href="#">Войти</a>                                                                       <!-- ok -->
+        </article>                                                                                      <!-- ok -->
+    </header>                                                                                           <!-- ok -->
+                                                                                                        
+    <main>                                                                                   <!-- снова main??? -->
+        <slider>                                                                           <!-- нет такого тега -->
+            <ul>                                                                                        <!-- ok -->
+                <h1>                                                                                    <!-- ok -->
+                    кот Васька                                                                          <!-- ok -->
+                    <li><img src="" alt="Васька"></li>                          <!-- Зачем заголовком писать??? -->
+                </h1>                                                           <!-- по сути дублирование строки-->
+                <li><img src="" alt="Васька"></li>                                                      <!-- ok -->
+                <h1>кошка Матильда</h1>                                                                 <!-- ok -->
+                <li><img src="" alt="Матильда"></li>                                                    <!-- ok -->
+                <h1>кошка Марфа</h1>                                                                    <!-- ok -->
+                <li><img src="" alt="Марфа"></li>                                                       <!-- ok -->
+                <h1>кот Пуфик</h1>                                                                      <!-- ok -->
+                <li><img src="" alt="Пуфик"></li>                                                       <!-- ok -->
+            </ul>                                                                                       <!-- ok -->
+        </slider> <!-- нет такеого тега -->
+
+        <article>                                                                                       <!-- ok -->
+            <h1>Появились недавно</h1>                                                                  <!-- ok -->
+            <section>                                                                                   <!-- ok -->
+                <h2>Гоша</h2>                                                                           <!-- ok -->
+                <img src="" alt="Гоша">                                                                 <!-- ok -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, velit.</p>          <!-- ok -->
+                <a href="#">Перейти</a>                                                                 <!-- ok -->
+                <h2>Граф</h2>                                                                           <!-- ok -->
+                <img src="" alt="Граф">                                                                 <!-- ok -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, velit.</p>          <!-- ok -->
+                <a href="#">Перейти</a>                                                                 <!-- ok -->
+                <h2>Люся</h2>                                                                           <!-- ok -->
+                <img src="" alt="Люся">                                                                 <!-- ok -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, velit.</p>          <!-- ok -->
+                <a href="#">Перейти</a>                                                                 <!-- ok -->
+                <h2>Алан</h2>                                                                           <!-- ok -->
+                <img src="" alt="Алан">                                                                 <!-- ok -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, velit.</p>          <!-- ok -->
+                <a href="#">Перейти</a>                                                                 <!-- ok -->
+            </section>                                                                                  <!-- ok -->
+        </article>                                                                                      <!-- ok -->
+        <article>                                                                                       <!-- ok -->
+            <h1>Ищут хозяина</h1>                                                                       <!-- ok -->
+        </article>                                                                                      <!-- ok -->
+        <article>                                                                                       <!-- ok -->
+            <h1>Уехали домой</h1>                                                                       <!-- ok -->
+            <div>                                                                                       <!-- ok -->
+                <h2>Марсик</h2>                                                                         <!-- ok -->
+                <img src="" alt="Марсик">                                                               <!-- ok -->
+
+                <h2>Крош</h2>                                                                           <!-- ok -->
+                <img src="" alt="Крош">                                                                 <!-- ok -->
+
+                <h2>Муська</h2>                                                                         <!-- ok -->
+                <img src="" alt="Муська">                                                               <!-- ok -->
+
+                <h2>Томас</h2>                                                                          <!-- ok -->
+                <img src="" alt="Томас">                                                                <!-- ok -->
+            </div>                                                                                      <!-- ok -->
+                                                                                         <!-- не закрыт article -->
+    </main>                                                                                             <!-- ok -->
+
+    <footer>                                                                                            <!-- ok -->
+        <div>Правила приюта</div>                                                                       <!-- ok -->
+        <div>Мы поможем подобрать питомца</div>                                                         <!-- ok -->
+        <div>Совместная опека</div>                                                                     <!-- ok -->
+        <div>Гостиница</div>                                                                            <!-- ok -->
+        <div>Игровая площадка</div>                                                                     <!-- ok -->
+        <div>                                                          <!-- не считаю, что этому место в footer -->
+            <textarea type="text" placeholder="напишите нам"></textarea>                                <!-- ok -->
+            <input type="submit" value="Отправить письмо">                                              <!-- ok -->
+        </div>                                                                                          <!-- ok -->
+    </footer>                                                                                           <!-- ok -->
+</main>                                                                                  <!-- не нужен тут main -->
+</html>                                                                          <!-- перепутаны местами строки -->
+</body>                                                                          <!-- перепутаны местами строки -->

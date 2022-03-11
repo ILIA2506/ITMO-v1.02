@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Форма авторизации</title>
+    </head>
+    <body>
+        <form action="#" method="post" name="login-form"novalidate> <!-- обработчик формы на сервере; как могут быть переданы; имя логина; novalidate тогда браузер не будет ничего проверять, за все в ответе JavaScript -->
+            <div>
+                <input type="text" placeholder="Логин" autofocus required minlength="5" maxlength="15" name="login"> <!-- placeholder является подсказкой для пользователя; autofocus при загрузке формы элемент будет в форме -->
+                <!-- <input type="#" required minlength="5" maxlength="15"> какое значение атрибута type пропишем, такой тег и будет; required пользователь не пойдет дальше, если поле не заполнено: мин/макс кол-во символов -->
+                <input type="password" placeholder="Пароль" required minlenght="5" maxlenght="15" name="password">
+            </div>
+            <label>Запомнить меня <input type="checkbox" checked name="remember" value="yes"></label> <!-- текстовая метка к элементу формы, просто так не надо использовать -->
+            <div>
+                <input type="submit"> <!-- кнопка для отправки данных на сервер-->
+                <input type="reset"> <!-- кнопка очистки формы -->
+                <input type="button" value="Просто кнопка"> <!-- кнопка может быть любой нужно писать значение -->
+            </div>
+        </form>
+
+    </body>
+</html>
