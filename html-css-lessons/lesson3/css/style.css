@@ -1,0 +1,70 @@
+                                                /* комментарии в CSS файлах выглядят вот так :) */
+                                                /* в общем-то вот так выглядит язык CSS
+                                                селектор {
+                                                     имя_свойства: значение свойства;
+                                                     имя_свойства2: значение свойства;
+                                                    }
+                                                */
+  body {
+      font-size: 20px;                          /* размер шрифта. Пока будем задавать только в пикселях и процентах */
+      background-color: #BDBDBD;              /* цвет фона */
+      color: #F57C00;                         /* если значение цвета transparent, то цвет будет такой же, как у родителя */
+      margin: 0;                                 /* цвет текста */ /* про цвета: можно использовать #, rgb, rgba (с прозрачностью) или даже название цвет */ 
+  }
+  a {
+      color: inherit;                           /* наследование стиля от родителя */
+      text-decoration: none;                    /* декорирование текста и ссылок. Если none, то вообще полная отмена декорирования */
+                                                /* text-decoration: none | overline линия над текстом | line-through зачеркнутый | underline линия под текстом | blink мерцание; */
+      text-transform: uppercase;                /* сейчас используем верхний регистр; lowercase нижний регистр; capitalize первая буква заглавная */
+      font-weight: bold;                        /*bolder lighter normal 100 ... 900 */
+      padding: 15px 20px;
+      display: inline-block;                    /* можно прописать значение элемента как блочный (block) или строчный (inline). Либо можно блочно-строчный, как у нас. */
+                                                /* если пропишем (none), то элемент останется, но его можно отключить */ 
+  }
+  /* section h1  */                             /* вложенный селектор - стили применятся ко АБСОЛЮТНО КО ВСЕМ тегам h1, которые находятся где-то внутри секции*/
+  section > h1 {                                /* дочерний селектор - будет применятся к h1 ВНУТРИ section. Если h1 внутри еще какого-то элемента, то тогда работать не будет */
+      text-transform: uppercase;
+      text-align: center;                       /* выравнивание по горизонтали; left по левому краю | right по правому краю | justify по ширине */
+  }
+  .item {                                       /* селектор класса class="item" будет применятся к тем элементам, к которым применен атрибут class */
+      background-color: #616161;
+      padding: 10px;
+      margin: 20px;
+      border-radius: 5px;
+    }
+  .item img {
+      width: 100%;                              /* ширина */
+      height: auto;                             /* высота */
+      padding: 10px;
+      border: 1px solid #FFEB3B;              /* border(1) + padding(10) + width(div) + padding (10) + border (1) */
+      border-radius: 50%;
+      opacity: 0.7;                             /* можно и без нолика писать. Это прозрачность */
+  }
+  * {                                           /* стили применяются ко всем элементам, если используется "*" */
+      box-sizing: border-box;                   /* в ширину элемента будут входит паддинги и рамки, но не марджины */
+  }
+  div {
+      opacity: 0.7;
+      background-color:
+      rgb(red, green, blue);             /* будет прозрачный цвет фона и все, что вложена в div */
+
+      background-color:
+      (rgba(red, green, blue, alpha));   /* прозрачным станет только цвет фона */
+  }
+  .item a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: aqua;
+      color: black;
+      border-radius: 5px;
+      width: 100%;
+      /* display: block; */
+      text-align: center;
+  }
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  .text-bold {                                  /* есть в коде такой тег span, за счет него можно выделить какие-то кусочки текста */
+      font-weight: bold;
+  }
