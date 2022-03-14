@@ -1,0 +1,181 @@
+* {                                  
+    box-sizing: border-box;          
+}
+ul {                                                                           /* первое задание */
+    display: inline;
+}
+li {
+    display: inline;
+}
+ul ul {
+    display: none;
+}
+ul > li > ul > li {
+    display: inline;
+    display: none;
+}
+.task-1 ul > li > a {
+    text-decoration: none;
+    color: red;
+    background-color: orange;
+    padding: 10px 15px;
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+}
+.active-link {
+    text-decoration: none;
+    color: red;
+    background-color: orange;
+    border-bottom: 5px solid red;
+    padding: 10px 15px;
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+}
+.task-1 {
+background-color: orange;
+}
+.task-2 {                                                                      /* второе задание */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:justify
+}
+.task-2 h2 {
+    text-transform: uppercase;
+    text-align: center; 
+    font-family: inherit;
+}
+.text-bold-red {
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+    font-family: inherit;
+}
+.line-through {
+    text-decoration: line-through red;
+    font-family: inherit;
+}
+.text-bold-red-1 {
+    color: red;
+    font-weight: bold;
+    font-family: inherit;
+}
+.text-link {
+    color: red;
+    font-family: inherit;
+    text-decoration: none;
+}
+.Lorem {                                                                        /* третье задание */
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    background-color: blueviolet;
+}
+
+.text-link-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text-3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: black;
+}
+.image-3 {
+    width: 70%;                            
+    height: auto;                     
+    padding: 10px;
+    border: 3px solid blueviolet;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.image-3-1 {
+    width: 33%;                            
+    height: auto;                     
+    display: inline;
+    margin-left: auto;
+    margin-right: auto; 
+    opacity: 0.3;
+}
+.image-3-2 {
+    width: 33%;                            
+    height: auto;                     
+    display: inline;
+    margin-left: auto;
+    margin-right: auto; 
+    opacity: 0.6;
+}
+.image-3-3 {
+    width: 33%;                            
+    height: auto;                     
+    display: inline;
+    margin-left: auto;
+    margin-right: auto; 
+    opacity: 0.9;
+}
+.task-4 {                                                                   /* четвертое задание */
+    text-align: center;
+    word-spacing: 3px;
+    margin: 50px;
+}
+.task-4 a {
+    border: 3px solid red;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10%;
+    padding: 20px;
+} 
+.active-btn {
+    border: 3px solid red;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10%;
+    padding: 20px;
+    background-color: orange;
+}
+.task-5-big {                                                               /* пятое задание */
+    object-fit: cover;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+}
+.task-5-small {                                                     
+    object-fit: cover;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 5px;
+}
+.task-5 {
+    display: inline;
+}
+    .text-5 {
+    background-color: blue;
+    padding: 0px;
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    border: 0px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+}
+body {
+    background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-attachment: fixed;
+}
