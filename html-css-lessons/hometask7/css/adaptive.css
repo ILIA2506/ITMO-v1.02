@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header, .header-link, .header-link-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: bisque;
+    padding: 5px;
+    align-items: center; 
+}
+.header a, .header-link a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E91E63;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: bold;
+}
+.header-search {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2%;
+}
+.header-link-main img {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: bisque;
+    padding: 20px;
+}
+.footer a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E91E63;
+    font-weight: bold;
+}
+.supermain {
+    display: flex;
+    max-width: inherit;
+}
+.aside {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    justify-content: flex-start;
+    background-color: #FFF8E1;
+}
+.aside-main {
+    display: none;
+    flex-direction: column;
+    max-width: 20%;
+    justify-content: flex-start;
+    background-color: #FFF8E1;
+}
+.aside a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E91E63;
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.main {
+    display: flex;
+    max-width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: aliceblue;
+    border: 5px solid white;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: left;
+    color: #880E4F;
+}
+.bold {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #4A148C;
+    margin-top: auto;
+    
+}
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 10px;
+    border: 5px solid white;
+}
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 10px;
+    border: 5px solid white;    
+}
+.col-3 {
+    display: flex;
+    flex-direction: column;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding: 10px;
+    border: 5px solid white;
+}
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 5px solid white;
+}
+
+@media screen and (max-width: 539px) {
+/* Контрольная точка на изображении 3.png. 1
+карточка в каждом ряду. При нажатии на логотип должны открываться
+пункты основного меню. При нажатии на 'CATEGORIES' должны 
+открываться ссылки на категории. Оба меню вертикальные, текст 
+расположен по центру, как на изображении 3.1.png */
+
+    .header-search {
+        display: none;
+    }
+    .header, .header-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header a, .aside a {
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .header-link-main img {
+        object-fit: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .supermain {
+        display: block;
+    }
+    .main {
+        display: flex;
+        max-width: inherit;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .col-s-4 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .aside-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        max-width: 100%;
+        background-color: #FFF8E1;
+    }
+    .aside-main a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #E91E63;
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+    .aside {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+    #click:target {
+        display: flex;
+    }
+    .header-link {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+    #clack:target {
+        display: flex;
+    }
+}
+@media screen and (min-width: 540px) and (max-width: 767px) {
+    /* Контрольная точка на изображении 2.png. По 2 карточки 
+    одинакового размера в каждом ряду. Форма переходит вверх блока,
+    меню 'Категории' становится горизонтальным. Ссылки основного меню
+    прижаты к правому краю. */
+   
+    .header-search label {
+        display: none;
+    }
+    .header, .header-link {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .header-search {
+        margin-right: 0;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+    .header-link {
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 40px;
+    }
+    .header-link-main {
+        position: absolute;
+        justify-content: center;
+        left: 10px;
+        top: 40px;
+    }
+    .header a {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .aside {
+        display: flex;
+        flex-direction: row;
+        max-width: inherit;
+        justify-content: space-around;
+    }
+    .aside a {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .supermain {
+        display: block;
+    }
+    .main {
+        display: flex;
+        max-width: inherit;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .col-m-4 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    } 
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Контрольная точка на изображении 1.png.
+    По 3 карточки одинакового размера в каждом ряду.
+    Форма переходит вверх блока, меню 'Категории' 
+    становится горизонтальным. Ссылки основного меню прижаты
+    к правому краю. */
+    .aside-main {
+        display: none;
+        flex-direction: column;
+        max-width: 20%;
+        justify-content: flex-start;
+        background-color: #FFF8E1;
+    }
+    .header-search label {
+        display: none;
+    }
+    .header, .header-link {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .header-search {
+        margin-right: 0;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+    .header-link {
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 40px;
+    }
+    .header-link-main {
+        position: absolute;
+        justify-content: center;
+        left: 10px;
+        top: 40px;
+    }
+    .header a {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .aside {
+        display: flex;
+        flex-direction: row;
+        max-width: inherit;
+        justify-content: space-around;
+    }
+    .aside a {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .supermain {
+        display: block;
+    }
+    .main {
+        display: flex;
+        max-width: inherit;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .col-l-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}

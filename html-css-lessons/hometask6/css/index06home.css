@@ -163,7 +163,6 @@ label::before {
     color: whitesmoke;
 }
 .submenu {
-    display: none;
     margin-top: 10px;
     position: absolute;
     display: none;
