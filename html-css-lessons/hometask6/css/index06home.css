@@ -17,19 +17,20 @@ a {
 li {
     list-style-type: none;
     background-color: blue;
-    flex-grow: 2;
-}
-li :nth-child(1) {
-    flex-grow: 1;
+    flex: 1;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 ul {
     padding: 0px;
+    margin: 0px;
 }
 .link-row {
     display: flex;
     align-items: baseline;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: center;
+    text-align: center;
 }
 .link-column a {
     display: flex;
@@ -39,6 +40,9 @@ ul {
 }
 #regist:target {
     display: block;
+}
+form {
+    margin-top: 40px;
 }
 .login img {
     display: flex;                  /* потом ее невидимой сделать */
@@ -70,20 +74,28 @@ ul {
 }
 .login form input {
     width: 300px;
-    padding: 10px;
+    padding: 3px;
     margin-bottom: 10px;
 }
 .login div label {
     align-items: flex-start;
     display: flex;
     color: whitesmoke;
-    margin-top: 40px;
+    margin-top: 50px;
 }
-.login span {
-    margin-top: 30px;
+.login input {
     width: 300px;
-    padding: 10px;
+    padding: 3px;
     background-color: whitesmoke;    
+}
+.button {
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: -moz-linear-gradient(#bfd9f7, #0065e8, #005fcc);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#bfd9f7), to(#005fcc), color-stop(0.72, #0065e8));
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 30px;
 }
 input::-webkit-input-placeholder {                                      /* для нормальных браузеров */
     color: whitesmoke;
@@ -137,38 +149,27 @@ label::before {
     width: 18px;
     position: absolute;
     left: 99px;
-    top: 173px;
+    top: 195px;
 }
 .x {
     font-size: 40px;
     position: absolute;
-    right: 2%;
-    top: -2%;
+    right: 3px;
+    top: 3px;
     color: white;
 }                                      
 #remember:checked + label::before {
     content: "\1F5F8";
     color: whitesmoke;
 }
-span a {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: blue;
-}
-/* #mouse {
-opacity: 0;
-}
-#mouse:hover {
-opacity: 1;
-}
-#mouse a {
-    opacity: 1;
-} */
-
 .submenu {
     display: none;
+    margin-top: 10px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    text-align: center;
 }
-
 #mouse:hover .submenu {
     display: block;
 }
